@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--*mendatory stuff  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--* Title and all metadata (for discord embed)  -->
+    <title>TFR - Lore</title>
+    <meta content="Tyrant of False Realities - Lore" property="og:title">
+    <meta content="New here? Read our past. Our pain. WARNING: CLEARANCE LEVEL 2 NECESSARY!" property="og:description">
+    <meta content="https://falserealities.fr/" property="og:url">
+    <meta content="https://cdn.discordapp.com/icons/1061858661900767262/ad4277c83bfdc8445300e672d670732a.webp?size=1024"
+        property="og:image">
+    <meta content="#202020" data-react-helmet="true" name="theme-color">
+
+    <!--* CSS Links -->
+    <link rel="stylesheet" href="/assets/css/main/glitch.css">
+    <link rel="stylesheet" href="/assets/css/wiki/wiki-style.css">
+    <link rel="stylesheet" href="/assets/css/main/index.css">
+    <link rel="stylesheet" href="/assets/css/main/text.css">
+    <link rel="stylesheet" href="/assets/css/lore/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap">
+
+    <!--* Favicon  -->
+    <link rel="icon" type="image/png" href="/assets/img/icon/favicon/icon0.ico">
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <wiki-header>
+            <div class="site-title">
+                <img src="/assets/img/icon/5b7e1c27d6daab4a4d2fed169e3f6c27.webp" class="icon" alt="Home icon">
+                <h1 class="title-glitch">TFR —</h1>
+                <span id="rainbowText">Chronological Archive</span>
+            </div>
+        </wiki-header>
+    </header>
+
+    <div class="page-grid">
+        <nav>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <wiki-nav>
+                <div data-component="wiki-loreNav"></div>
+            </wiki-nav>
+        </nav>
+
+        <main>
+            <!-- Navigation -->
+            <div class="section-container">
+                <div class="page-nav thebar-container">
+                    <div class="radio-wrapper">
+                        <input type="radio" name="nav" class="input" id="home" onclick="window.location.href='/'">
+                        <label for="home" class="btn">
+                            <span class="btn__glitchy"></span>Home
+                        </label>
+                    </div>
+                    <!-- <div class="radio-wrapper">
+                        <input type="radio" name="nav" class="input" id="characters"
+                            onclick="window.location.href='/wiki/characters/'">
+                        <label for="characters" class="btn">
+                            <span class="btn__glitchy"></span>Chara.
+                        </label>
+                    </div> -->
+                    <div class="radio-wrapper">
+                        <input type="radio" name="nav" class="input" id="lore" checked
+                            onclick="window.location.href='/wiki/lore/'">
+                        <label for="lore" class="btn">
+                            <span class="btn__glitchy"></span>Lore
+                        </label>
+                    </div>
+                    <!-- <div class="radio-wrapper">
+                        <input type="radio" name="nav" class="input" id="settings"
+                            onclick="window.location.href='/settings.html'">
+                        <label for="settings" class="btn">
+                            <span class="btn__glitchy"></span>Settings
+                        </label>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-button terminal-button-red"></div>
+                            <div class="terminal-button terminal-button-yellow"></div>
+                            <div class="terminal-button terminal-button-green"></div>
+                        </div>
+                        <div class="terminal-title">CHRONOLOGICAL_DATABASE</div>
+                    </div>
+
+                    <div class="terminal-body">
+                        <!-- Introduction -->
+                        <div class="info-banner">
+                            <svg class="info__icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+                                </path>
+                            </svg>
+                            <span class="info__title">Chronological data accessible with Level 2 clearance — Historical
+                                accuracy: 89.7%</span>
+                        </div>
+
+                        <h1 class="glitch" data-text="TFR Timeline">TFR Timeline</h1>
+                        <div class="img-divider"></div>
+
+                        <p class="terminal-prompt centered">
+                            > Accessing chronological database...
+                            <br>> Timeline visualization initialized
+                            <br>> <span class="blink-text">Ready for interaction</span>
+                        </p>
+
+                        <!-- Timeline Header -->
+                        <div class="timeline-header">
+                            <div>
+                                <h2 class="timeline-title">Temporal Continuum Map</h2>
+                                <p class="timeline-subtitle">Navigating through the eras of TFR</p>
+                            </div>
+
+                        </div>
+                        <div class="timeline-legend">
+                            
+                            <div class="legend-item">
+                                <div class="legend-color red"></div>
+                                <span>DV7 Era</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color blue"></div>
+                                <span>Stellar Era</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color green"></div>
+                                <span>Temporal VR Era</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color gray"></div>
+                                <span>Next Era...</span>
+                            </div>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="timeline-container">
+                            <div class="timeline">
+                                <div class="timeline-line"></div>
+
+                                <!-- DV7 Era -->
+                                <div class="era-marker dv7" style="left: 15%" onclick="showEraContent('dv7')">
+                                    <div class="era-tooltip">
+                                        <strong class="red">DV7 Era</strong>
+                                        <p>Lorem Ipsum</p>
+                                    </div>
+                                    <div class="era-date">DONE</div>
+                                </div>
+
+                                <!-- Stellar Era -->
+                                <div class="era-marker stellar" style="left: 35%" onclick="showEraContent('stellar')">
+                                    <div class="era-tooltip">
+                                        <strong class="bright_teal">Stellar Era</strong>
+                                        <p>The rise and the death of a star.</p>
+                                    </div>
+                                    <div class="era-date">DONE</div>
+                                </div>
+
+                                <!-- Temporal VR Era -->
+                                <div class="era-marker" style="left: 55%" onclick="showEraContent('temporal')">
+                                    <div class="era-tooltip">
+                                        <strong>Temporal VR Era</strong>
+                                        <p>Blocked again in this VR world.</p>
+                                    </div>
+                                    <div class="era-date">DONE</div>
+                                </div>
+
+                                <!-- Present/Next era -->
+                                <div class="era-marker present" style="left: 75%" onclick="showEraContent('present')">
+                                    <div class="era-tooltip">
+                                        <strong>Next Era...</strong>
+                                        <p>????????</p>
+                                    </div>
+                                    <div class="era-date">JUNE 2025</div>
+                                </div>
+                            </div>
+
+
+                            <!--! Era Content Sections -->
+
+                            <!--* DV7 -->
+                            <div id="dv7-content" class="era-content dv7">
+                                <h2 class="red">DV7's Era (DEC. 2024 - JAN. 2025)</h2>
+                                <p class="red italic-text">Dark times of fear, control, and isolation.</p>
+
+                                <div class="event-cards">
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 1</h3>
+                                        <p class="event-description">LOREM IPSUM</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives
+                                                (wip)</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 2</h3>
+                                        <p class="event-description">LOREM IPSUM.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--* Stellar -->
+                            <div id="stellar-content" class="era-content">
+                                <h2 class="bright_teal">Stellar Era (JAN. 2025 - FEB. 2025)</h2>
+                                <p class="italic-text">Following the rise and the death of a star.</p>
+
+                                <div class="event-cards">
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 1</h3>
+                                        <p class="event-description">LOREM IPSUM</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives
+                                                (wip)</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 2</h3>
+                                        <p class="event-description">LOREM IPSUM.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--TODO: DO ALL LORE LOGS HERE.
+                             <div class="event-cards">
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">JAN 2025</span>
+                                        </div>
+                                        <h3 class="event-title">Stellar's Era • Trailer</h3>
+                                        <p class="event-description">The beginning of a new age under different leadership.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/stellar_era/trailer.html'">Read Archives</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">MAR 2025</span>
+                                        </div>
+                                        <h3 class="event-title">Flight of the Crows</h3>
+                                        <p class="event-description">The story of the mysterious crows and their significance.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/stellar_era/flight_of_the_crows/'">Read Archives</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">JUN 2025</span>
+                                        </div>
+                                        <h3 class="event-title">The Rise of a Star</h3>
+                                        <p class="event-description">Documentation of the rise of new leadership in the aftermath.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/stellar_era/the_rise_of_a_star/'">Read Archives</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">SEP 2025</span>
+                                        </div>
+                                        <h3 class="event-title">Tongues and Teeth</h3>
+                                        <p class="event-description">PLEASE KISS ALREADY YOU GAYS!</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/stellar_era/tongues_and_teeth/'">Read Archives</button>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!--* Temporal  -->
+                            <div id="temporal-content" class="era-content">
+                                <h2>Temporal VR ERA (MARCH-APRIL 2025)</h2>
+                                <p class="italic-text">NOTE FOR JONAH: NEVER PRESS BIG RED BUTTON WHEN YOU TRESPASS
+                                    PRIVATE
+                                    PROPERTY</p>
+
+                                <div class="event-cards">
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 1</h3>
+                                        <p class="event-description">LOREM IPSUM</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives
+                                                (wip)</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 2</h3>
+                                        <p class="event-description">LOREM IPSUM.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--* Present -->
+                            <div id="present-content" class="era-content">
+                                <h2>Next Era... (JUN. 2025)</h2>
+                                <p class="italic-text">The future era.</p>
+
+                                <div class="event-cards">
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 1</h3>
+                                        <p class="event-description">LOREM IPSUM</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives
+                                                (wip)</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-card">
+                                        <div class="event-header">
+                                            <span class="event-date">DATE</span>
+                                        </div>
+                                        <h3 class="event-title">event 2</h3>
+                                        <p class="event-description">LOREM IPSUM.</p>
+                                        <div class="event-actions">
+                                            <button class="event-button" onclick="location.href='/wiki/lore/'">Read
+                                                Archives</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="art-divider"></div>
+
+                        <div class="settings-section">
+                            <h2 class="centered">How 2 read lore log?</h2>
+                            <p class="small-text italic-text center">
+                                <span class="green italic-text lore left">Green, italic text between [] (aka bracket)
+                                    are
+                                    actions. ** can also represent actions.</span><br>
+                                <span class="italic-text">lime green text between "" (aka quotes) are character
+                                    speaking!</span> <br>
+                                <span class="italic-text darkgreen">Dark green text with the // (double slash) are
+                                    useful
+                                    OOC (out of character) text that has a purpose.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <wiki-footer>
+                <div class="footer-content">
+                    <p class="small-text">TFR Wiki © 2025 | <a href="../sitemap.xml">Sitemap</a> |
+                        <!--TODO: <a href="/settings.html">Settings</a> -->
+                    </p>
+                    <p class="small-text gray">Access from Terminal #7429 | Last sync: 28/03/2025</p>
+                </div>
+            </wiki-footer>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set rainbow text
+            if (document.getElementById('rainbowText')) {
+                document.getElementById('rainbowText').innerHTML = 'Chronological Archive';
+            }
+
+            // Add blinking text effect
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .blink-text {
+                    animation: blinker 1s step-end infinite;
+                }
+                @keyframes blinker {
+                    50% { opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+
+            // Show a special era content by default
+            // showEraContent('');
+        });
+
+        function showEraContent(era) {
+            // Hide all era content
+            const contents = document.querySelectorAll('.era-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Show selected era content
+            document.getElementById(era + '-content').classList.add('active');
+
+            // Scroll to content
+            document.getElementById(era + '-content').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+/*! TFR CSS - TEXT - WIP | CC BY-NC-SA 4.0 Licence */
+
+/** Fonts ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', monospace;
+}
+
+/** Texts ========================================================================== */
+h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    /* text-align: center; */
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+q {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Changez cette ligne pour aligner le texte à gauche */
+}
+
+/** Text Styling ========================================================================== */
+
+.logs {
+    white-space: pre-line;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.strike-text {
+    text-decoration: line-through;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.exposent {
+    vertical-align: super;
+    font-size: 0.5em;
+}
+
+.left {
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.reset-margin-bottom {
+    margin-bottom: 0;
+}
+
+/** Text Color ========================================================================== */
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.lime {
+    color: lime;
+}
+
+.green {
+    color: rgb(0, 149, 0);
+}
+
+.darkgreen {
+    color: darkgreen;
+}
+
+.blue {
+    color: blue;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.indigo {
+    color: indigo;
+}
+
+.violet {
+    color: violet;
+}
+
+.gray {
+    color: gray;
+}
+
+.white {
+    color: white;
+}
+
+.almostblack {
+    color: #010101;
+}
+
+/* FIX PAGE DISPLAY ========================================================================  */
+.page-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.page-grid > nav {
+    display: none;
+}
+
+main {
+    width: 100%;
+}
